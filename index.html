@@ -11,7 +11,68 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>Money Master💰</h1>
+    <main>
+      <!-- Money Master -->
+      <section class="container my-4">
+        <h1 class="mb-2 fs-3 text-center text-info fw-bold">Money Master💰</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- image -->
+          <div class="col">
+            <div class="">
+              <img src="./images/money-master.png" alt="money master" class="w-100 object-fit-cover" />
+            </div>
+          </div>
+          <!-- actions -->
+          <div class="col">
+            <div class="bg-lightgrey d-flex flex-column align-items-center">
+              <!-- income -->
+              <div>
+                <h4 class="text-center fw-bold mb-2">Income</h4>
+                <div class="d-flex">
+                  <p class="my-auto mx-2">Income</p>
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="10000" />
+                </div>
+              </div>
+              <!-- Expenses -->
+              <div class="my-3">
+                <h4 class="text-center fw-bold">Expenses</h4>
+                <!-- food -->
+                <div class="d-flex">
+                  <p class="my-auto mx-3">Food</p>
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="3000" />
+                </div>
+                <!-- rent -->
+                <div class="d-flex my-2">
+                  <p class="my-auto mx-3">Rent</p>
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="2000" />
+                </div>
+                <!-- others -->
+                <div class="d-flex">
+                  <p class="my-auto mx-2">Others</p>
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="500" />
+                </div>
+                <div class="w-100 my-3 text-center">
+                  <button class="btn btn-primary w-75">Calculate</button>
+                </div>
+                <h5 class="text-center fw-semibold my-3">Total Expenses: <span>5500</span></h5>
+                <h5 class="text-center fw-semibold">Balance: <span>4500</span></h5>
+              </div>
+              <!-- savings -->
+              <div class="my-3">
+                <div class="d-flex justify-content-center">
+                  <p class="my-auto mx-2">Save</p>
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="20" />
+                  <p class="mx-2 fs-5 my-auto">%</p>
+                  <button class="btn btn-primary">Save</button>
+                </div>
+                <h5 class="text-center fw-semibold my-3">Saving Amount: <span>2000</span></h5>
+                <h5 class="text-center fw-semibold my-3">Remaining Balance: <span>2500</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
