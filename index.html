@@ -24,13 +24,13 @@
           </div>
           <!-- actions -->
           <div class="col">
-            <div class="bg-lightgrey d-flex flex-column align-items-center">
+            <div class="bg-lightgrey d-flex flex-column align-items-center py-4">
               <!-- income -->
               <div>
                 <h4 class="text-center fw-bold mb-2">Income</h4>
                 <div class="d-flex">
                   <p class="my-auto mx-2">Income</p>
-                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="10000" />
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="0" id="total-income" />
                 </div>
               </div>
               <!-- Expenses -->
@@ -39,34 +39,34 @@
                 <!-- food -->
                 <div class="d-flex">
                   <p class="my-auto mx-3">Food</p>
-                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="3000" />
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="0" id="food-input" />
                 </div>
                 <!-- rent -->
                 <div class="d-flex my-2">
                   <p class="my-auto mx-3">Rent</p>
-                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="2000" />
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="0" id="rent-input" />
                 </div>
                 <!-- others -->
                 <div class="d-flex">
                   <p class="my-auto mx-2">Others</p>
-                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="500" />
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="0" id="other-input" />
                 </div>
                 <div class="w-100 my-3 text-center">
-                  <button class="btn btn-primary w-75">Calculate</button>
+                  <button class="btn btn-primary w-75" id="calculate-btn">Calculate</button>
                 </div>
-                <h5 class="text-center fw-semibold my-3">Total Expenses: <span>5500</span></h5>
-                <h5 class="text-center fw-semibold">Balance: <span>4500</span></h5>
+                <h5 class="text-center fw-semibold my-3">Total Expenses: <span id="total-expense">0</span></h5>
+                <h5 class="text-center fw-semibold">Balance: <span id="balance">0</span></h5>
               </div>
               <!-- savings -->
               <div class="my-3">
                 <div class="d-flex justify-content-center">
                   <p class="my-auto mx-2">Save</p>
-                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="20" />
+                  <input type="number" min="1" class="form-control bg-grey rounded fw-bold" value="0" id="percentage-input" />
                   <p class="mx-2 fs-5 my-auto">%</p>
-                  <button class="btn btn-primary">Save</button>
+                  <button class="btn btn-primary" id="savings-btn">Save</button>
                 </div>
-                <h5 class="text-center fw-semibold my-3">Saving Amount: <span>2000</span></h5>
-                <h5 class="text-center fw-semibold my-3">Remaining Balance: <span>2500</span></h5>
+                <h5 class="text-center fw-semibold my-3">Saving Amount: <span id="savings">0</span></h5>
+                <h5 class="text-center fw-semibold my-3">Remaining Balance: <span id="remaining-balance">0</span></h5>
               </div>
             </div>
           </div>
